@@ -56,7 +56,7 @@ function showRecipe(recipeId) {
     const title = document.getElementById("recipeTitleLabel");
     title.innerText = recipe.title;
     
-    const selectElement = document.querySelector('stuckInput');
+    const selectElement = document.getElementById("stuckInput");
     selectElement.addEventListener('change', () => reloadIngredients());
 
     reloadIngredients(recipeId);
