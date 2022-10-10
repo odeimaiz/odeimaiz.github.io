@@ -16,6 +16,8 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Our scripts -->
+    <script src="/jsMuffin/ingredients.js"></script>
 <![endif]-->
 </head>
 
@@ -24,24 +26,24 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div>
-                    <button class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <button class="btn" onclick="showRecipe(1)" data-toggle="modal" data-target="#exampleModal">
                         <img width="120" src="./images/muffin.png" />
                    </button>
                 </div>
                 <div>
-                    <button class="btn">
+                    <button class="btn" onclick="showRecipe(2)">
                         <img width="120" src="./images/muffin.png" />
                    </button>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div>
-                    <button class="btn">
+                    <button class="btn" onclick="showRecipe(3)">
                         <img width="120" src="./images/muffin.png" />
                    </button>
                 </div>
                 <div>
-                    <button class="btn">
+                    <button class="btn" onclick="showRecipe(4)">
                         <img width="120" src="./images/muffin.png" />
                    </button>
                 </div>
@@ -79,27 +81,8 @@
                     </div>
                 </div>
                 <div>
-                    <ul id="myList"></ul>
+                    <ul id="ingredients-list"></ul>
                 </div>
-                <script>
-                    let ingredients1 = [{
-                        label: "bat",
-                        quantity: 4
-                    }, {
-                        label: "bi",
-                        quantity: 1
-                    }, {
-                        label: "hiru",
-                        quantity: 20
-                    }];
-                    let list = document.getElementById("myList");
-                
-                    ingredients1.forEach((ingredient) => {
-                        let li = document.createElement("li");
-                        li.innerText = ingredient.label + ": " + ingredient.quantity*2;
-                        list.appendChild(li);
-                    });
-                </script>
             </div>
         </div>
         </div>
