@@ -47,7 +47,13 @@ const RECIPES = {
     }
 }
 
+let currentRecipe = 'recipe1';
+
+const selectElement = document.querySelector('stuckInput');
+selectElement.addEventListener('change', () => reloadIngredients());
+
 function showRecipe(recipeId) {
+    currentRecipe = recipeId;
     const recipe = RECIPES[recipeId];
 
     const title = document.getElementById("recipeTitleLabel");
@@ -57,6 +63,9 @@ function showRecipe(recipeId) {
 }
 
 function reloadIngredients(recipeId) {
+    if (recipeId === undefined) {
+        recipeId = currentRecipe;
+    }
     const recipe = RECIPES[recipeId];
 
     const stuckInput = document.getElementById("stuckInput");
