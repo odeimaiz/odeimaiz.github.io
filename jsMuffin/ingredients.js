@@ -6,10 +6,12 @@ const RECIPES = {
             weight: 1
         }, {
             label: "bi",
-            weight: 2
+            weight: 2,
+            extra: "g"
         }, {
             label: "hiru",
-            weight: 3
+            weight: 3,
+            extra: " stuck"
         }]
     },
     recipe2: {
@@ -78,6 +80,9 @@ function reloadIngredients(recipeId) {
     recipe.ingredients.forEach(ingredient => {
         const li = document.createElement("li");
         li.innerText = ingredient.label + ": " + ingredient.weight*quantity;
+        if ("extra" in ingredient) {
+            li.innerText += ingredient.extra;
+        }
         list.appendChild(li);
     });
 }
