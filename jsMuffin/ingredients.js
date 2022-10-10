@@ -1,14 +1,28 @@
 const RECIPES = {
     recipe1: {
+        title: "Muffin 1",
         ingredients: [{
             label: "bat",
-            quantity: 4
-        }, {
-            label: "bi",
             quantity: 1
         }, {
+            label: "bi",
+            quantity: 2
+        }, {
             label: "hiru",
-            quantity: 20
+            quantity: 3
+        }]
+    },
+    recipe2: {
+        title: "Muffin 2",
+        ingredients: [{
+            label: "lau",
+            quantity: 4
+        }, {
+            label: "bost",
+            quantity: 5
+        }, {
+            label: "sei",
+            quantity: 6
         }]
     }
 }
