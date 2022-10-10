@@ -3,54 +3,51 @@ const RECIPES = {
         title: "Muffin 1",
         ingredients: [{
             label: "bat",
-            quantity: 1
+            weight: 1
         }, {
             label: "bi",
-            quantity: 2
+            weight: 2
         }, {
             label: "hiru",
-            quantity: 3
+            weight: 3
         }]
     },
     recipe2: {
         title: "Muffin 2",
         ingredients: [{
             label: "lau",
-            quantity: 4
+            weight: 4
         }, {
             label: "bost",
-            quantity: 5
+            weight: 5
         }, {
             label: "sei",
-            quantity: 6
+            weight: 6
         }]
     },
     recipe3: {
         title: "Muffin 3",
         ingredients: [{
             label: "sei",
-            quantity: 6
+            weight: 6
         }, {
             label: "zazpi",
-            quantity: 7
+            weight: 7
         }]
     },
     recipe4: {
         title: "Muffin 4",
         ingredients: [{
             label: "zortzi",
-            quantity: 8
+            weight: 8
         }, {
             label: "bederatzi",
-            quantity: 9
+            weight: 9
         }]
     }
 }
 
 let currentRecipe = 'recipe1';
-
-const selectElement = document.querySelector('stuckInput');
-selectElement.addEventListener('change', () => reloadIngredients());
 
 function showRecipe(recipeId) {
     currentRecipe = recipeId;
@@ -58,6 +55,9 @@ function showRecipe(recipeId) {
 
     const title = document.getElementById("recipeTitleLabel");
     title.innerText = recipe.title;
+    
+    const selectElement = document.querySelector('stuckInput');
+    selectElement.addEventListener('change', () => reloadIngredients());
 
     reloadIngredients(recipeId);
 }
@@ -69,10 +69,7 @@ function reloadIngredients(recipeId) {
     const recipe = RECIPES[recipeId];
 
     const stuckInput = document.getElementById("stuckInput");
-    let stuck = parseInt(stuckInput.placeholder);
-    if (stuckInput.value) {
-        stuck = parseInt(stuckInput.value);       
-    }
+    const quantity = parseInt(stuckInput.value ? stuckInput.value : stuckInput.placeholder);
 
     const list = document.getElementById("ingredients-list");
     while (list.firstChild) {
@@ -80,7 +77,7 @@ function reloadIngredients(recipeId) {
     }
     recipe.ingredients.forEach(ingredient => {
         const li = document.createElement("li");
-        li.innerText = ingredient.label + ": " + ingredient.quantity*stuck;
+        li.innerText = ingredient.label + ": " + ingredient.weight*quantity;
         list.appendChild(li);
     });
 }
