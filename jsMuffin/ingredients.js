@@ -53,17 +53,18 @@ function showRecipe(recipeId) {
     const title = document.getElementById("recipeTitleLabel");
     title.innerText = recipe.title;
 
+    reloadIngredients(recipeId);
+}
+
+function reloadIngredients(recipeId) {
+    const recipe = RECIPES[recipeId];
+
     const stuckInput = document.getElementById("stuckInput");
     let stuck = parseInt(stuckInput.placeholder);
     if (stuckInput.value) {
         stuck = parseInt(stuckInput.value);       
     }
 
-    reloadIngredients(recipeId);
-}
-
-function reloadIngredients(recipeId) {
-    const recipe = RECIPES[recipeId];
     const list = document.getElementById("ingredients-list");
     while (list.firstChild) {
         list.removeChild(list.lastChild);
