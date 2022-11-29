@@ -3,144 +3,144 @@ const RECIPES = {
         title: "Emmen. Aprikose Thymian",
         ingredients: [{
             label: "Milch",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "ml"
         }, {
             label: "Vollei",
-            weight: 0.12,
-            extra: "kg"
+            weight: 120,
+            extra: "ml"
         },{
             label: "Mehl",
-            weight: 0.25,
-            extra: "kg"
+            weight: 250,
+            extra: "gr"
         },{
             label: "Backpulver",
-            weight: 0.01,
-            extra: "kg"
+            weight: 10,
+            extra: "gr"
         },{
-            label: "Oel",
-            weight: 0.03,
-            extra: "kg"
+            label: "Öl",
+            weight: 30,
+            extra: "ml"
         },{
             label: "Emmentaler gewürfelt",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "gr"
         },{
             label: "Getr. Aprikose gewürfelt",
-            weight: 0.15,
-            extra: "kg"
+            weight: 150,
+            extra: "gr"
         },{
             label: "Thymian gehackt",
-            weight: 0.005,
-            extra: "kg"
+            weight: 5,
+            extra: "gr"
         }]
     },
     recipe2: {
         title: "Speck",
         ingredients: [{
             label: "Milch",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "ml"
         }, {
             label: "Vollei",
-            weight: 0.12,
-            extra: "kg"
+            weight: 120,
+            extra: "ml"
         },{
             label: "Mehl",
-            weight: 0.25,
-            extra: "kg"
+            weight: 250,
+            extra: "gr"
         },{
             label: "Backpulver",
-            weight: 0.015,
-            extra: "kg"
+            weight: 15,
+            extra: "gr"
         },{
             label: "Olivenöl",
-            weight: 0.02,
-            extra: "kg"
+            weight: 20,
+            extra: "ml"
         },{
-            label: "Speck ausgelasen",
-            weight: 0.2,
-            extra: "kg"
+            label: "Speck",
+            weight: 200,
+            extra: "gr"
         },{
             label: "Gruyere gewürfelt",
-            weight: 0.15,
-            extra: "kg"
+            weight: 150,
+            extra: "gr"
         },{
             label: "Rosmarin gehackt",
-            weight: 0.005,
-            extra: "kg"
+            weight: 5,
+            extra: "gr"
         }]
     },
     recipe3: {
         title: "Wurzelgemüse",
         ingredients: [{
             label: "Milch",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "ml"
         }, {
             label: "Vollei",
-            weight: 0.12,
-            extra: "kg"
+            weight: 120,
+            extra: "ml"
         },{
             label: "Mehl",
-            weight: 0.25,
-            extra: "kg"
+            weight: 250,
+            extra: "gr"
         },{
             label: "Backpulver",
-            weight: 0.015,
-            extra: "kg"
+            weight: 15,
+            extra: "gr"
         },{
             label: "Rapsöl",
-            weight: 0.03,
-            extra: "kg"
+            weight: 30,
+            extra: "ml"
         },{
             label: "Wurzelgemüse blanchiert",
-            weight: 0.25,
-            extra: "kg"
+            weight: 250,
+            extra: "gr"
         },{
             label: "Baumnuss",
-            weight: 0.1,
-            extra: "kg"
+            weight: 100,
+            extra: "gr"
         },{
             label: "Salvei gehackt",
-            weight: 0.005,
-            extra: "kg"
+            weight: 5,
+            extra: "gr"
         }]
     },
     recipe4: {
         title: "Lachs",
         ingredients: [{
             label: "Milch",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "ml"
         }, {
             label: "Vollei",
-            weight: 0.12,
-            extra: "kg"
+            weight: 120,
+            extra: "ml"
         },{
             label: "Mehl",
-            weight: 0.25,
-            extra: "kg"
+            weight: 250,
+            extra: "gr"
         },{
             label: "Backpulver",
-            weight: 0.01,
-            extra: "kg"
+            weight: 10,
+            extra: "gr"
         },{
             label: "Rapsöl",
-            weight: 0.03,
-            extra: "kg"
+            weight: 30,
+            extra: "gr"
         },{
             label: "Rauchlachs gewürfelt",
-            weight: 0.2,
-            extra: "kg"
+            weight: 200,
+            extra: "gr"
         },{
             label: "Dill Senf Sauce",
-            weight: 0.1,
-            extra: "kg"
+            weight: 100,
+            extra: "gr"
         },{
             label: "Dill",
-            weight: 0.005,
-            extra: "kg"
+            weight: 5,
+            extra: "gr"
         }]
     }
 }
