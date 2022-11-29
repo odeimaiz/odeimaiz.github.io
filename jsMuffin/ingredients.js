@@ -1,18 +1,39 @@
 const RECIPES = {
     recipe1: {
-        title: "Muffin 1",
+        title: "Emmentaler Aprikose Thymian",
         ingredients: [{
-            label: "bat",
-            weight: 1
+            label: "Milch",
+            weight: 0.2,
+            extra: "kg"
         }, {
-            label: "bi",
-            weight: 2,
-            extra: "g"
-        }, {
-            label: "hiru",
-            weight: 3,
-            extra: " stuck"
-        }]
+            label: "Vollei",
+            weight: 0.12,
+            extra: "kg"
+        },{
+            label: "Mehl",
+            weight: 0.25,
+            extra: "kg"
+        },{
+            label: "Backpulver",
+            weight: 0.01,
+            extra: "kg"
+        },{
+            label: "Oel",
+            weight: 0.03,
+            extra: "kg"
+        },{
+            label: "Emmentaler gewürfelt",
+            weight: 0.2,
+            extra: "kg"
+        },{
+            label: "Getr. Aprikose gewürfelt",
+            weight: 0.15,
+            extra: "kg"
+        },{
+            label: "Thymian gehackt",
+            weight: 0.005,
+            extra: "kg"
+        },]
     },
     recipe2: {
         title: "Muffin 2",
@@ -79,7 +100,7 @@ function reloadIngredients(recipeId) {
     }
     recipe.ingredients.forEach(ingredient => {
         const li = document.createElement("li");
-        li.innerText = ingredient.label + ": " + ingredient.weight*quantity;
+        li.innerText = ingredient.label + ": " + (ingredient.weight/20)*quantity;
         if ("extra" in ingredient) {
             li.innerText += ingredient.extra;
         }
