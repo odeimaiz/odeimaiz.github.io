@@ -33,19 +33,42 @@ const RECIPES = {
             label: "Thymian gehackt",
             weight: 0.005,
             extra: "kg"
-        },]
+        }]
     },
     recipe2: {
-        title: "Muffin 2",
+        title: "Speck",
         ingredients: [{
-            label: "lau",
-            weight: 4
+            label: "Milch",
+            weight: 0.2,
+            extra: "kg"
         }, {
-            label: "bost",
-            weight: 5
-        }, {
-            label: "sei",
-            weight: 6
+            label: "Vollei",
+            weight: 0.12,
+            extra: "kg"
+        },{
+            label: "Mehl",
+            weight: 0.25,
+            extra: "kg"
+        },{
+            label: "Backpulver",
+            weight: 0.015,
+            extra: "kg"
+        },{
+            label: "Olivenöl",
+            weight: 0.02,
+            extra: "kg"
+        },{
+            label: "Speck ausgelasen",
+            weight: 0.2,
+            extra: "kg"
+        },{
+            label: "Gruyere gewürfelt",
+            weight: 0.15,
+            extra: "kg"
+        },{
+            label: "Rosmarin gehackt",
+            weight: 0.005,
+            extra: "kg"
         }]
     },
     recipe3: {
