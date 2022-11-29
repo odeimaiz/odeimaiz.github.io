@@ -1,6 +1,6 @@
 const RECIPES = {
     recipe1: {
-        title: "Emmentaler Aprikose Thymian",
+        title: "Emmen. Aprikose Thymian",
         ingredients: [{
             label: "Milch",
             weight: 0.2,
@@ -72,23 +72,75 @@ const RECIPES = {
         }]
     },
     recipe3: {
-        title: "Muffin 3",
+        title: "Wurzelgemüse",
         ingredients: [{
-            label: "sei",
-            weight: 6
+            label: "Milch",
+            weight: 0.2,
+            extra: "kg"
         }, {
-            label: "zazpi",
-            weight: 7
+            label: "Vollei",
+            weight: 0.12,
+            extra: "kg"
+        },{
+            label: "Mehl",
+            weight: 0.25,
+            extra: "kg"
+        },{
+            label: "Backpulver",
+            weight: 0.015,
+            extra: "kg"
+        },{
+            label: "Rapsöl",
+            weight: 0.03,
+            extra: "kg"
+        },{
+            label: "Wurzelgemüse blanchiert",
+            weight: 0.25,
+            extra: "kg"
+        },{
+            label: "Baumnuss",
+            weight: 0.1,
+            extra: "kg"
+        },{
+            label: "Salvei gehackt",
+            weight: 0.005,
+            extra: "kg"
         }]
     },
     recipe4: {
-        title: "Muffin 4",
+        title: "Lachs",
         ingredients: [{
-            label: "zortzi",
-            weight: 8
+            label: "Milch",
+            weight: 0.2,
+            extra: "kg"
         }, {
-            label: "bederatzi",
-            weight: 9
+            label: "Vollei",
+            weight: 0.12,
+            extra: "kg"
+        },{
+            label: "Mehl",
+            weight: 0.25,
+            extra: "kg"
+        },{
+            label: "Backpulver",
+            weight: 0.01,
+            extra: "kg"
+        },{
+            label: "Rapsöl",
+            weight: 0.03,
+            extra: "kg"
+        },{
+            label: "Rauchlachs gewürfelt",
+            weight: 0.2,
+            extra: "kg"
+        },{
+            label: "Dill Senf Sauce",
+            weight: 0.1,
+            extra: "kg"
+        },{
+            label: "Dill",
+            weight: 0.005,
+            extra: "kg"
         }]
     }
 }
