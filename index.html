@@ -252,30 +252,9 @@ Leaderboard
         <svg class="ico-cup">
             <use xlink:href="#cup"></use>
         </svg>
-        Most active Players
+        Treppen Seegarten
     </h1>
-    <ol>
-        <li>
-            <mark>Jerry Wood</mark>
-            <small>315</small>
-        </li>
-        <li>
-            <mark>Brandon Barnes</mark>
-            <small>301</small>
-        </li>
-        <li>
-            <mark>Raymond Knight</mark>
-            <small>292</small>
-        </li>
-        <li>
-            <mark>Trevor McCormick</mark>
-            <small>245</small>
-        </li>
-        <li>
-            <mark>Andrew Fox</mark>
-            <small>203</small>
-        </li>
-    </ol>
+    <div id='participantsList'></div>
 </div>
 
 
@@ -300,6 +279,31 @@ Leaderboard
 	c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z" />
     </symbol>
 </svg>
-                            <script type='text/javascript'></script>
-                            </body>
-                        </html>
+
+<script type='text/javascript'>
+    var arr = [{
+            label: 'alpha',
+            time: 1.22
+        }, {
+            label: 'bravo',
+            time: 1.32
+        }];
+    var cont = document.getElementById('participantsList');
+
+    // create ul element and set the attributes.
+    var ul = document.createElement('ul');
+
+    for (i = 0; i <= arr.length - 1; i++) {
+        var li = document.createElement('li');     // create li element.
+        var mark = document.createElement('mark');
+        mark.innerHTML = arr[i].label;
+        li.appendChild(mark);
+        var small = document.createElement('small');
+        small.innerHTML = arr[i].time;
+        li.appendChild(small);
+        ul.appendChild(li);     // append li to ul.
+    }
+    cont.appendChild(ul);       // add list to the container.
+</script>
+</body>
+</html>
