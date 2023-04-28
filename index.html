@@ -288,10 +288,11 @@ Leaderboard
             label: 'bravo',
             time: 1.32
         }];
+        arr.sort((a, b) => a.time - b.time);
     var cont = document.getElementById('participantsList');
 
     // create ul element and set the attributes.
-    var ul = document.createElement('ul');
+    var ol = document.createElement('ol');
 
     for (i = 0; i <= arr.length - 1; i++) {
         var li = document.createElement('li');     // create li element.
@@ -301,9 +302,9 @@ Leaderboard
         var small = document.createElement('small');
         small.innerHTML = arr[i].time;
         li.appendChild(small);
-        ul.appendChild(li);     // append li to ul.
+        ol.appendChild(li);     // append li to ul.
     }
-    cont.appendChild(ul);       // add list to the container.
+    cont.appendChild(ol);       // add list to the container.
 </script>
 </body>
 </html>
