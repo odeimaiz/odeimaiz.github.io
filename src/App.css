@@ -1,3 +1,25 @@
-.App {
+/* Full-page background */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+/* Content centered */
+.app-container {
   text-align: center;
+  color: white; /* Adjust text color for visibility */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Optional: Style for the 40 if needed */
+h1 {
+  font-size: 100px;
+  font-weight: bold;
 }
