@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import Navbar from "./components/Navbar";
 import Intro from './pages/Intro';
 import Details from './pages/Details';
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
+        <LanguageSwitcher />
         <Navbar />
         <div className="content">
           <Routes>
