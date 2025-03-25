@@ -103,7 +103,8 @@ nav {
 }
 
 .page {
-  min-height: 100vh;
+  max-height: 90vh;
+  overflow-y: auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
