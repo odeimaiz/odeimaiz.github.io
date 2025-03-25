@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav>
       <div className="navbar-container">
         <Link to="/" className="flex items-center gap-2">
-          {isMobile ? <FaHome size={20} /> : "Intro"}
+          {isMobile ? <FaHome size={20} /> : "Zorionak"}
         </Link>
         <Link to="/details" className="flex items-center gap-2">
           {isMobile ? <FaInfoCircle size={20} /> : "Details"}
