@@ -1,8 +1,7 @@
-/* Full-page background */
-body, html {
+/* Center the app */
+#root, body, html {
   height: 100%;
   margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,15 +10,25 @@ body, html {
   background-repeat: no-repeat; /* Prevent tiling */
 }
 
-/* Content centered */
+/* Postcard styling */
 .app-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  max-width: 400px; /* Limit width like a postcard */
   text-align: center;
-  color: white; /* Adjust text color for visibility */
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
+  opacity: 0.95; /* Slight transparency */
 }
 
-/* Optional: Style for the 40 if needed */
-h1 {
-  font-size: 100px;
-  font-weight: bold;
+/* Optional: Style for your text inside the card */
+.app-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.app-container p {
+  font-size: 1.2rem;
+  color: #555;
 }

@@ -4,7 +4,11 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
+      <h1>You're Invited! 🎉</h1>
+      <p>Join me to celebrate my 40th birthday!</p>
+      <p>Date: 26th April</p>
+      <p>Location: Etzel</p>
       <Navbar />
       <Section id="details" title="Party Details">
         <p>Join us for an unforgettable celebration! 🎉</p>
@@ -14,9 +18,9 @@ const App = () => {
       </Section>
       <Section id="rsvp" title="RSVP">
         <iframe
-          src="YOUR_GOOGLE_FORM_EMBED_URL"
+          src="" // GOOGLE_FORM_EMBED_URL
           width="100%"
-          height="600"
+          height="200"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
