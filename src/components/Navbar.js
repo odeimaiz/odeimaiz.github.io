@@ -13,22 +13,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md p-4 z-10">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className={`flex ${isMobile ? "space-x-5" : "space-x-10"}`}>
-          <Link to="/" className="flex items-center gap-2 hover:text-blue-500">
-            {isMobile ? <FaHome size={20} /> : "Intro"}
-          </Link>
-          <Link to="/details" className="flex items-center gap-2 hover:text-blue-500">
-            {isMobile ? <FaInfoCircle size={20} /> : "Details"}
-          </Link>
-          <Link to="/location" className="flex items-center gap-2 hover:text-blue-500">
-            {isMobile ? <FaMapMarkerAlt size={20} /> : "Location"}
-          </Link>
-          <Link to="/rsvp" className="flex items-center gap-2 hover:text-blue-500">
-            {isMobile ? <FaClipboardList size={20} /> : "RSVP"}
-          </Link>
-        </div>
+    <nav>
+      <div className="navbar-container">
+        <Link to="/" className="flex items-center gap-2">
+          {isMobile ? <FaHome size={20} /> : "Intro"}
+        </Link>
+        <Link to="/details" className="flex items-center gap-2">
+          {isMobile ? <FaInfoCircle size={20} /> : "Details"}
+        </Link>
+        <Link to="/location" className="flex items-center gap-2">
+          {isMobile ? <FaMapMarkerAlt size={20} /> : "Location"}
+        </Link>
+        <Link to="/rsvp" className="flex items-center gap-2">
+          {isMobile ? <FaClipboardList size={20} /> : "RSVP"}
+        </Link>
       </div>
     </nav>
   );

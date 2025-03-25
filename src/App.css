@@ -1,16 +1,62 @@
-/* Center the app */
-#root, body, html {
+/* Global Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover; /* Ensure the image covers the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
 }
 
-/* Postcard styling */
+/* Navbar Styling */
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  z-index: 10; /* Ensure navbar stays on top */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.navbar-container a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container a:hover {
+  color: #007bff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    justify-content: center;
+    flex-direction: row; /* Make sure items stay horizontally aligned */
+  }
+}
+
+/* App Container Styling (like the postcard) */
 .app-container {
   background: white;
   padding: 2rem;
@@ -22,7 +68,6 @@
   opacity: 0.95; /* Slight transparency */
 }
 
-/* Optional: Style for your text inside the card */
 .app-container h1 {
   font-size: 2rem;
   color: #333;
@@ -33,6 +78,7 @@
   color: #555;
 }
 
+/* Content and Page Layout */
 .content {
   margin-top: 60px; /* Adjust based on navbar height */
   padding: 20px;
