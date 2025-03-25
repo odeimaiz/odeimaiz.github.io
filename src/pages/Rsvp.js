@@ -18,7 +18,7 @@ const Rsvp = () => {
 
   return (
     <section id="rsvp" className="page">
-      <h2 className="text-2xl font-bold mb-4">{t('rsvp_title')}</h2>
+      <h2 className="text-2xl font-bold mb-4">Hey</h2>
       Loading…
     </section>
   );

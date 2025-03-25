@@ -1,11 +1,12 @@
 {
-    "invitation_title": "Gonbidauta zaude! 🎉",
-    "invitation_body": "Guazen 40. urtebetetzea batea ospatzea!",
-    "date": "Noiz: Apirilak 26",
-    "location": "Nun: Etzel",
-    "details_title": "Jaiaren Xehetasunak",
-    "details_body": "Ez ahaztu gonbidapena ondo pasatzeko! 🎉",
-    "location_title": "Nola Iritsi",
-    "location_body": "Kokapenaren informazioa eta mapa hemen egongo dira. 📍",
-    "rsvp_title": "Erantzun"
-  }
+  "nav.intro": "Zorionak",
+  "nav.details": "Xehetasunak",
+  "nav.location": "Nola Iritsi",
+  "nav.rsvp": "Etorriko zea?",
+  "intro.text": "Gonbidauta zaude! 🎉",
+  "invitation_body": "Guazen 40. urtebetetzea batea ospatzea!",
+  "date": "Noiz: Apirilak 26",
+  "location": "Nun: Etzel",
+  "details_body": "Ez ahaztu gonbidapena ondo pasatzeko! 🎉",
+  "location_body": "Kokapenaren informazioa eta mapa hemen egongo dira. 📍"
+}
