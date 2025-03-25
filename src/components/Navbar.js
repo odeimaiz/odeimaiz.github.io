@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ const Navbar = () => {
           <li><a href="#location" className="hover:text-blue-500">Location</a></li>
           <li><a href="#rsvp" className="hover:text-blue-500">RSVP</a></li>
         </ul>
+        <LanguageSwitcher />
       </div>
     </nav>
   );

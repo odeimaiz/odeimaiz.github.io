@@ -16,7 +16,7 @@
   padding: 2rem;
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  max-width: 400px; /* Limit width like a postcard */
+  max-width: 500px; /* Limit width like a postcard */
   text-align: center;
   font-family: Arial, sans-serif;
   opacity: 0.95; /* Slight transparency */

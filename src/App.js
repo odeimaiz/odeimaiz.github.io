@@ -1,22 +1,26 @@
+import { useTranslation } from 'react-i18next';
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import './App.css';
+import './i18n';
 
 const App = () => {
+  const { t } = useTranslation();  // Access translation function
+
   return (
     <div className="app-container">
-      <h1>You're Invited! 🎉</h1>
-      <p>Join me to celebrate my 40th birthday!</p>
-      <p>Date: 26th April</p>
-      <p>Location: Etzel</p>
+      <h1>{t('invitation_title')}</h1>
+      <p>{t('invitation_body')}</p>
+      <p>{t('date')}</p>
+      <p>{t('location')}</p>
       <Navbar />
-      <Section id="details" title="Party Details">
-        <p>Join us for an unforgettable celebration! 🎉</p>
+      <Section id="details" title={t('details_title')}>
+        <p>{t('details_body')}</p>
       </Section>
-      <Section id="location" title="How to Get There">
-        <p>Location info and a map will go here. 📍</p>
+      <Section id="location" title={t('location_title')}>
+        <p>{t('location_body')}</p>
       </Section>
-      <Section id="rsvp" title="RSVP">
+      <Section id="rsvp" title={t('rsvp_title')}>
         <iframe
           src="" // GOOGLE_FORM_EMBED_URL
           width="100%"
