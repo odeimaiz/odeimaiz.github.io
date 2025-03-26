@@ -5,8 +5,14 @@ const Details = () => {
 
   return (
     <section id="details" className="page">
-      <h2 className="text-2xl font-bold mb-4">{t('details_title')}</h2>
-      <p>{t('details_body')}</p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_1') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_2') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_3') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_4') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_5') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_6') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_7') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('details.body_8') }}></p>
     </section>
   );
 };

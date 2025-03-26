@@ -19,8 +19,8 @@ body, html {
 
 .language-switcher {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   display: flex;
   gap: 10px;
 }
@@ -29,7 +29,6 @@ body, html {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
 }
 
 .language-switcher button:hover {
@@ -43,7 +42,7 @@ nav {
   left: 0;
   width: 100%;
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   z-index: 10; /* Ensure navbar stays on top */
 }
 
@@ -78,9 +77,8 @@ nav {
 /* App Container Styling (like the postcard) */
 .app-container {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
   max-width: 600px; /* Limit width like a postcard */
   text-align: center;
   font-family: Arial, sans-serif;
@@ -93,12 +91,12 @@ nav {
 }
 
 .app-container p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
 }
 
 .content {
-  padding: 20px;
+  padding: 10px;
   line-height: 2;
 }
 
@@ -117,7 +115,7 @@ nav {
 }
 
 h1, h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {

@@ -6,9 +6,16 @@
   "intro.title": "Gonbidauta zaude! 🎉",
   "intro.body_1": "Guazen 40. urtebetetzea batea ospatzea! Giro ona, jende aparta, denetiko musika eta, espero det, mozorron bat.",
   "intro.body_2": "🔥 Parrilla piztuko deu, mokadu goxoak izango ditugu, eta noski, edariak ez dira faltako!",
-  "date": "Noiz: Apirilak 26, larunbata",
+  "date": "Noiz: <strong>Apirilak 26, larunbata</strong>",
   "location": "Nun: Etzelen",
-  "details_body": "Ez ahaztu gonbidapena ondo pasatzeko! 🎉",
+  "details.body_1": "Festa <strong>Larunbat eguerdin</strong> hasiko da ta <strong>Iganden</strong>, urtebetetze egunen, bukatu beharko da.",
+  "details.body_2": "Gaupasa gelditu nahi badezu, eta ohea bat nahi badezu, <strong>20 ohe</strong> dauzken logela dauken 1go pixun — abixatu gelditu nahi badezu!",
+  "details.body_3": "Esan bezela, pikoteoa eongo da ta <strong>barbakoa</strong> ingo deu, ekarri <strong>parrilan jartzea gustatzen zaizuna</strong>.",
+  "details.body_4": "Tragotxok e' izango die, baino ekarri lasai <strong>zure trago gustokonak</strong>.",
+  "details.body_5": "<strong>Eguraldi ona badeu...</strong> kanpon daun zelai erraldoia erabili daikeu <strong>zerbaitetan jolasteko</strong>.",
+  "details.body_6": "Spotifyen <strong>partekatuko playlista</strong> izango deu, hola denoi gustatzen zaiguna entzungo deu.",
+  "details.body_7": "<strong>Mozorrok... beti die ongi etorrik!</strong> Ez lotsatu ta jantzi nahi dezuen bezela.",
+  "details.body_8": "<strong>Katuk</strong> ekartzea daude, <strong>txakurrak</strong> ordea... kanpora!",
   "location_body": "Kokapenaren informazioa eta mapa hemen egongo dira. 📍",
   "rsvp.body": "Esan (zeinekin) etorriko zean ta ea gaupasa geldituko zean!"
 }
