@@ -23,6 +23,13 @@ const LanguageSwitcher = () => {
           style={{ width: '28px', height: 'auto' }}
         />
       </button>
+      <button onClick={() => i18n.changeLanguage('ch')} aria-label="Hopp Schwiiz">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/240px-Flag_of_Switzerland_%28Pantone%29.svg.png"
+          alt="English"
+          style={{ width: '18px', height: 'auto' }}
+        />
+      </button>
     </div>
   );
 };

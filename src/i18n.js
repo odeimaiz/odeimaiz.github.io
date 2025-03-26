@@ -6,6 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import the translation files
 import enTranslation from './locales/en.json';
 import euTranslation from './locales/eu.json';
+import chTranslation from './locales/ch.json';
 
 // Initialize i18next
 i18n
@@ -15,11 +16,12 @@ i18n
     resources: {
       en: { translation: enTranslation },
       eu: { translation: euTranslation },
+      ch: { translation: chTranslation },
     },
-    lng: 'en',  // Default language
-    fallbackLng: 'en',
+    lng: 'eu', // Default language
+    fallbackLng: 'eu',
     interpolation: {
-      escapeValue: false,  // React already escapes variables
+      escapeValue: false,
     },
   });
 
