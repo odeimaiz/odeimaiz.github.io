@@ -16,6 +16,13 @@
   "details.body_6": "Spotifyen <strong>partekatuko playlista</strong> izango deu, hola denoi gustatzen zaiguna entzungo deu.",
   "details.body_7": "<strong>Mozorrok... beti die ongi etorrik!</strong> Ez lotsatu ta jantzi nahi dezuen bezela.",
   "details.body_8": "<strong>Katuk</strong> ekartzea daude, <strong>txakurrak</strong> ordea... kanpora!",
-  "location_body": "Kokapenaren informazioa eta mapa hemen egongo dira. 📍",
+  "location.title": "Etzelen",
+  "location.body_1": "You might know where Etzel is... but here the precise address of the hütte:",
+  "location.body_2": "Obereggstrasse 5, 8847 Egg SZ",
+  "location.body_3": "Nola iratsi: hamaika bide... ",
+  "location.body_4": "Hartu trena train Einsideln-ea, gero autobuse Egg-ea SZ and 10 minutuko paseoa bertatik.",
+  "location.body_5": "Bizikletan etorri nahi badezu, buruz jakingo dakezu: Etzel, Sattelegg, Raten... ez ahaztu etxea buelta.",
+  "location.body_6": "Parking murriztu bat dau Hütten ondon, umekin datozenatzat utziko nuke. Halare, Etzelpass bertan edo Egg-en aparkatzea dau.",
+  "location.body_7": "Azekenekoz, raketatan edo mendi buelta. Hartu trena Pfäffikon-ea SZ, and pare bat orduko paseoa Etzelpassetik",
   "rsvp.body": "Esan (zeinekin) etorriko zean ta ea gaupasa geldituko zean!"
 }
