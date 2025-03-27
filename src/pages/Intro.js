@@ -9,7 +9,8 @@ const Intro = () => {
       <p>{t('intro.body_1')}</p>
       <p>{t('intro.body_2')}</p>
       <p dangerouslySetInnerHTML={{ __html: t('date') }}></p>
-      <p><a href="https://maps.app.goo.gl/8fs4DW7Aq4jRt2jX7" target="_blank">{t('location')}</a></p>
+      <p dangerouslySetInnerHTML={{ __html: t('location') }}></p>
+      <p dangerouslySetInnerHTML={{ __html: t('intro.body_3') }}></p>
     </section>
   );
 };
