@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaInfoCircle, FaMapMarkerAlt, FaClipboardList } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +7,7 @@ const Navbar = () => {
   const { t } = useTranslation(); // Initialize the translation hook
   const breakpoint = 768;
   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < breakpoint);
@@ -17,16 +18,16 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar-container">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className={`nav-item ${location.pathname === "/" ? "active" : ""}`}>
           {isMobile ? <FaHome size={20} /> : t("nav.intro")}
         </Link>
-        <Link to="/details" className="flex items-center gap-2">
+        <Link to="/details" className={`nav-item ${location.pathname === "/details" ? "active" : ""}`}>
           {isMobile ? <FaInfoCircle size={20} /> : t("nav.details")}
         </Link>
-        <Link to="/location" className="flex items-center gap-2">
+        <Link to="/location" className={`nav-item ${location.pathname === "/location" ? "active" : ""}`}>
           {isMobile ? <FaMapMarkerAlt size={20} /> : t("nav.location")}
         </Link>
-        <Link to="/rsvp" className="flex items-center gap-2">
+        <Link to="/rsvp" className={`nav-item ${location.pathname === "/rsvp" ? "active" : ""}`}>
           {isMobile ? <FaClipboardList size={20} /> : t("nav.rsvp")}
         </Link>
       </div>

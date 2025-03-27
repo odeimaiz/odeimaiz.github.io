@@ -63,6 +63,19 @@ nav {
   color: #007bff;
 }
 
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  color: #007bff; /* Or any other highlight color */
+  border-bottom: 2px solid #007bff; /* Adds an underline effect */
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
   .navbar-container {
