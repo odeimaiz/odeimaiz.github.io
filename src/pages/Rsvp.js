@@ -11,26 +11,19 @@ const Rsvp = () => {
   const [formSrc, setFormSrc] = useState("");
 
   useEffect(() => {
-    setFormSrc(forms[i18n.language] || forms.en);
+    setFormSrc(forms[i18n.language] || forms.en); // falback to English if language not found
   }, [i18n.language]);
 
   return (
     <section id="rsvp" className="page">
       <p>{t("rsvp.body")}</p>
-      {formSrc && ( // Only render iframe when formSrc is set
-        <iframe
-          key={formSrc} // Forces re-render when src changes
-          src={formSrc}
-          title="rsvp"
-          width="100%"
-          height="400"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
-      )}
+      <button
+        onClick={() => window.open(formSrc, "_blank")}
+        disabled={!formSrc}
+        className="rsvp-button"
+      >
+        {t("rsvp.button")}
+      </button>
     </section>
   );
 };

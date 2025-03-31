@@ -133,3 +133,27 @@ h1, h2 {
 p {
   font-size: 1rem;
 }
+
+.rsvp-button {
+  background-color: #007bff; /* Nice blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.rsvp-button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05);
+}
+
+.rsvp-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
